@@ -19,12 +19,6 @@
   twitter: raboofje
   desc: After working on static source code analysis and receiving his M.Sc. in CS in 2006, Arnout went on to industry. Here he worked in a wide range of fields, from high-traffic enterprise e-commerce to financial data processing, predominantly based on the JVM. With that he became excited about how Akka can elegantly model today's concurrent and distributed systems.
 
-- name: Enno Runne
-  avatar: https://en.gravatar.com/avatar/aa7dc84848a809f47e21f4195ba1a8b2?s=160
-  title: Akka Tech Lead
-  twitter: ennru
-  desc: Enno got introduced to Java in 1996 by Martin Odersky at Karlsruhe Institute of Technology. After his studies and Master's thesis on implementing Java Generics he moved to Sweden for love, and started his IT career building the Swedish national prescription registry and diverse other projects. Enno founded the Scala Stockholm user group in 2010 and is involved in the Jfokus developers' conference.
-
 - name: Ignasi Marimon-Clos
   avatar: https://s.gravatar.com/avatar/73fd4336663abc30844ea3a895b4a6fb?s=160
   twitter: ignasi35
