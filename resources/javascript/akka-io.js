@@ -1,7 +1,5 @@
 $(function () {
 
-
-
     // algolia search box hook
 
     // initalizes doc search if there is a search box
@@ -110,3 +108,21 @@ function OptanonWrapper() {
         OneTrust.InsertHtml('<div class="tubeytube"><iframe src="//www.youtube.com/embed/'+ytID+'?rel=0&modestbranding=0" frameborder="0" allow="fullscreen"></iframe></div>', 'yt-'+ytID, null, {deleteSelectorContent: true}, '4');
     }); 
 };
+
+//vanilla JS, therefore lives outside of $(function... scope
+document.addEventListener("DOMContentLoaded", function() {
+    var rotator = document.getElementById('lightbendRotator');
+    if(rotator){
+        var index = 0;
+        var rotatorItems = rotator.children;
+        var rotatorItemsLength = rotatorItems.length -1;
+        //turn on first item
+        rotatorItems[index].classList.add('visible');
+        //rotate through items
+        setInterval(function(){ 
+            rotatorItems[index].classList.remove('visible');
+            if(index != rotatorItemsLength){index += 1;}else{index = 0;};
+            rotatorItems[index].classList.add('visible');
+        }, 9000);
+    };
+});

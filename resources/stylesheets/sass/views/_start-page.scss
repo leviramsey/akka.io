@@ -103,24 +103,128 @@
 
 }
 
+
+.logo-grid {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+
+	span, a {
+		display: block;
+		width: 15%;
+		border: none;
+		position: relative;
+		img {
+			opacity: .7;
+			filter: grayscale(1);
+		}
+	}
+	a:after {
+		content: "Go to case study";
+		opacity: 0;
+		bottom: 1rem;
+		left: 0;
+		width: 100%;
+		position: absolute;
+		color: $pri_orange;
+		text-transform: uppercase;
+		font-size: .75rem;
+	}
+	a:hover:after {
+		opacity: 1;
+	}
+	a:hover img {
+		opacity: 1;
+		filter: grayscale(0);
+	}
+	
+	@include tablet-landscape-and-below {
+		justify-content: center;
+		span, a {
+			width: 20%;
+		}
+	}
+	@include tablet-portrait-and-below {
+		justify-content: center;
+		span, a {
+			width: 25%;
+		}
+	}
+	@include mobile-landscape-and-below {
+		justify-content: center;
+		span, a {
+			width: 45%;
+		}
+	}
+	@include mobile-portrait-and-below {
+		justify-content: center;
+		span, a {
+			width: 60%;
+		}
+	}
+}
+
 .sponsors {
     margin: 60px 0 0 0;
     text-align: center;
     h1 {
         margin-bottom: 1em;
     }
+    a.lightbend-sponsor-logo {
+    	padding: 0 1rem 1rem 1rem;
+    	display: inline-block;
+    }
     img {
         width: 100%;
-        padding: 20px;
     }
-    @include tablet-portrait-and-below {
+    @include mobile-portrait-and-below {
         img {
-            width: 40%;
+            width: 90%;
         }
     }
-    a {
+    a.lightbend-sponsor-logo {
         border: 0;
     }
+}
+
+div.akka-lightbend-promo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 3px 6px rgba(0,0,0, 0.16), 0 3px 6px rgba(0,0,0, 0.23);
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: white;
+	&:hover {
+		background-color: rgba(255,255,255,0.7);
+	}
+	a.logo-link {
+        border: 0;
+    }
+	img {
+		width: 160px;
+		margin: 0 auto;
+	}
+	p {
+		color: $pri_text;
+		padding: 0;
+		font-weight: 400;
+		margin: 0;
+		font-size: .875rem;
+	}
+	span {
+		color: $pri_orange;
+		border-bottom: 1px solid $pri_orange;
+		margin: 10px 0 0 0;
+	}
+	span:hover {
+    	color: rgba(0,0,0,0.5);
+    	border-bottom: 1px solid rgba(0,0,0,0.5);
+	}
+	> div {
+		margin-top: 1rem;
+	}
 }
 
 .indexLatest {
