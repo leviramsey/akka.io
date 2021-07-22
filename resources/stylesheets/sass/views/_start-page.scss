@@ -172,14 +172,16 @@
     }
     a.lightbend-sponsor-logo {
     	padding: 0 1rem 1rem 1rem;
-    	display: inline-block;
+    	display: block;
+    	max-width: 240px;
+    	margin: 0 auto;
     }
     img {
         width: 100%;
     }
     @include mobile-portrait-and-below {
-        img {
-            width: 90%;
+        a.lightbend-sponsor-logo {
+        	max-width: 200px;
         }
     }
     a.lightbend-sponsor-logo {
