@@ -97,3 +97,27 @@ button::-moz-focus-inner {
   background-position: 15px 13px;
   background-size: 30px 30px;
 }
+.btn.aws {
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  background-image: url(../images/aws-white.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 10px left 0px;
+  background-size: 100% 40px;
+}
+.btn.google-cloud {
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  background-image: url(../images/google-cloud-white.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 12px left 0px;
+  background-size: 100% 36px;
+}
+.btn.akka-serverless {
+  padding-top: 60px;
+  box-sizing: border-box;
+  background-image: url(../images/akka-serverless-reverse.svg);
+  background-repeat: no-repeat;
+  background-position: top 10px left 0px;
+  background-size: 100% 40px;
+}

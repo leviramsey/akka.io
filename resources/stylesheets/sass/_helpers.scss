@@ -75,6 +75,12 @@
   clear: both;
 }
 
+.buffer-row-compact {
+  padding-bottom: 2rem;
+}
+.buffer-row {
+  padding-bottom: 4rem;
+}
 
 @mixin bleed($padding: $grid-padding, $sides: left right) {
   @if $sides == 'all' {

@@ -108,11 +108,21 @@
   }
 }
 
+div.akka-lightbend-promo.cloud-provider img {
+  height: 56px;
+  width: auto;
+}
+
 .tryAkkaContent {
 
   .tryAkkaBtns {
     h2 {
       margin-bottom: 20px;
+    }
+    @include multi-column {
+      a.btn {
+        margin: 0 15px 15px 15px;
+      }
     }
     text-align: center;
   }
