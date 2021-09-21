@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How Akka gRPC went from nearly last to #1 in performance
+title: Akka gRPC 2.1 performance improvement
 author: Johannes Rudolph
-short: Akka gRPC 2.1 performance improvement
+short: How Akka gRPC went from nearly last to #1 in performance 
 category: news
 tags: [announcement,grpc]
 canonical_url: https://www.lightbend.com/blog/akka-grpc-update-delivers-1200-percent-performance-improvement
