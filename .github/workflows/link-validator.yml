@@ -24,9 +24,9 @@ jobs:
         run: bundle exec jekyll build --future
 
       - name: Set up JDK 11
-        uses: olafurpg/setup-scala@v10
+        uses: olafurpg/setup-scala@v13
         with:
-          java-version: adopt@1.11.0-9
+          java-version: adopt@1.11
 
       - name: Cache Coursier cache
         uses: coursier/cache-action@v5
@@ -35,4 +35,4 @@ jobs:
         run: curl -fLo cs https://git.io/coursier-cli-linux && chmod +x cs && ./cs
 
       - name: Run Link Validator
-        run: ./cs launch net.runne::site-link-validator:0.2.0 -- link-validator.conf
+        run: ./cs launch net.runne::site-link-validator:0.2.2 -- link-validator.conf
