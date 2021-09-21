@@ -2,21 +2,21 @@
 layout: post
 title: How Akka gRPC went from nearly last to #1 in performance
 author: Johannes Rudolph
-short: How Akka gRPC went from nearly last to #1 in performance
+short: Akka gRPC 2.1 performance improvement
 category: news
 tags: [announcement,grpc]
 canonical_url: https://www.lightbend.com/blog/akka-grpc-update-delivers-1200-percent-performance-improvement
 ---
 
-# How Akka gRPC went from nearly last to #1 in performance
+## How Akka gRPC went from nearly last to #1 in performance
 
-![social image](http://downloads.lightbend.com/website/blog-images/akka_grpc_social_v3.png)
+![social image](https://downloads.lightbend.com/website/blog-images/akka_grpc_social_v3.png)
 
 In our recent announcement of [version 2.1.0 of Akka gRPC](https://discuss.lightbend.com/t/akka-grpc-2-1-0-released/8702#highlights-1), the Akka team was also pleased to see very positive results from a community benchmark that measures performance and latency of over 30 gRPC libraries. Akka gRPC (named “Scala_Akka” in the benchmark) went from 29th place to 1st in just three months, delivering an impressive 1231% increase in processing throughput (req/s) and a 93% reduction in average latency per request.
 
 So what is Akka gRPC, and how did we manage to make it the fastest solution tested? We sat down with Johannes Rudolph ([@virtualvoid](https://twitter.com/virtualvoid)), Senior Engineer on the Akka team at Lightbend, to learn more about this story...
 
-[SEE THE BENCHMARKS ON GITHUB](http://github.com/LesnyRumcajs/grpc_bench/wiki/2021-08-30-bench-results)
+[SEE THE BENCHMARKS ON GITHUB](https://github.com/LesnyRumcajs/grpc_bench/wiki/2021-08-30-bench-results)
 
 ## Q: What is Akka gRPC and where does it show up in Lightbend products?
 Akka gRPC is our OSS gRPC library that builds on top of Akka and Akka HTTP.  A few years ago we started looking into gRPC over other protocols for microservice communication because of its well-defined interface and solid tooling for different programming languages–i.e. not just JVM languages.
@@ -31,14 +31,14 @@ In May 2021, we were preparing the Akka Serverless Beta launch and worked on opt
 ### May 2021
 Akka gRPC benchmark (Scala_Akka) for May 2021
 
-![May results](http://downloads.typesafe.com./website/blog-images/2021-05-20-bench-results.png)
+![May results](https://downloads.typesafe.com./website/blog-images/2021-05-20-bench-results.png)
 
 Source: https://github.com/LesnyRumcajs/grpc_bench/wiki/2021-05-20-bench-results
 
 ### August 2021
 Akka gRPC benchmark (Scala_Akka) for August 2021
 
-![August results](http://downloads.typesafe.com/website/blog-images/2021-08-30-bench-results.png)
+![August results](https://downloads.typesafe.com/website/blog-images/2021-08-30-bench-results.png)
 
 Source: https://github.com/LesnyRumcajs/grpc_bench/wiki/2021-08-30-bench-results
 
