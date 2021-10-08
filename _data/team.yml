@@ -19,11 +19,6 @@
   twitter: raboofje
   desc: After working on static source code analysis and receiving his M.Sc. in CS in 2006, Arnout went on to industry. Here he worked in a wide range of fields, from high-traffic enterprise e-commerce to financial data processing, predominantly based on the JVM. With that he became excited about how Akka can elegantly model today's concurrent and distributed systems.
 
-- name: Ignasi Marimon-Clos
-  avatar: https://s.gravatar.com/avatar/73fd4336663abc30844ea3a895b4a6fb?s=160
-  twitter: ignasi35
-  desc: Ignasi completed his M.Sc. in Telecom Engineering in 2001. He's worked in sectors like Healthcare, e-Voting and hight-traffic e-Commerce and has always been interested in reducing user friction but also GC tuning, memory footprint and other low-level details of the JVM.
-
 - name: Renato Guerra Cavalcanti
   avatar: https://s.gravatar.com/avatar/5b8367bc982d30bc9d4e56d1cd463498?s=160
   twitter: octonato
@@ -32,3 +27,7 @@
 - name: Peter Vlugter
   avatar: http://www.gravatar.com/avatar/d1d4a046f41854a01e461b1732bb764b?s=160
   desc: Peter worked on Akka in the early days, and then Akka-related projects like Lightbend Telemetry. He's currently the farthest flung member of the Akka team, living on the South Island of New Zealand.
+
+- name: Raymond Roestenburg
+  avatar: https://avatars.githubusercontent.com/u/156425?v=4&s=160
+  desc: Author of Akka in Action.
