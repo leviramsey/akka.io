@@ -15,6 +15,11 @@
   twitter: rolandkuhn
   desc: After earning a PhD in high-energy particle physics and while working as a systems engineer in the space business, Roland came in contact with the Akka project. He started contributing in 2010 and was employed by Lightbend 2011-2016 where he was leading the Akka project from November 2012. <a href="https://www.rolandkuhn.com">rolandkuhn.com</a>
 
+- name: Ignasi Marimon-Clos
+  avatar: https://s.gravatar.com/avatar/73fd4336663abc30844ea3a895b4a6fb?s=160
+  twitter: ignasi35
+  desc: Ignasi completed his M.Sc. in Telecom Engineering in 2001. He's worked in sectors like Healthcare, e-Voting and hight-traffic e-Commerce and has always been interested in reducing user friction but also GC tuning, memory footprint and other low-level details of the JVM.
+
 - name: Sean Glover
   avatar: https://s.gravatar.com/avatar/b63a5a7cb334c6ca17bd532a9d4864e5?s=160
   twitter: seg1o
