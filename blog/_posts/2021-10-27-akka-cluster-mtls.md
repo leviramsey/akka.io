@@ -121,7 +121,7 @@ This instructs Akka to use TLS, with the `RotatingKeysSSLEngineProvider`, an SSL
 
 ## Configuring the Akka deployment
 
-Having configured Akka and built a new Docker image, you can now configure your Akka deployment. To do this, you need to mount the certificate at the path `/var/run/secrets/akka-tls`. This is the default path that the `RotatingKeysSSLEngineProvider` uses to pick up its certificates. So, add the following volume to your pod:
+Having configured Akka and built a new Docker image, you can now configure your Akka deployment. To do this, you need to mount the certificate at the path `/var/run/secrets/akka-tls/rotating-keys-engine`. This is the default path that the `RotatingKeysSSLEngineProvider` uses to pick up its certificates. So, add the following volume to your pod:
 
 ```yaml
       volumes:
@@ -135,7 +135,7 @@ And then you can mount that in your container:
 ```yaml
         volumeMounts:
         - name: akka-tls
-          mountPath: /var/run/secrets/akka-tls
+          mountPath: /var/run/secrets/akka-tls/rotating-keys-engine
 ```
 
 Your complete deployment YAML, configured as described in our [Kubernetes deployment guide](https://doc.akka.io/docs/akka-management/current/kubernetes-deployment/preparing-for-production.html#deployment-spec), might look like this:
@@ -184,7 +184,7 @@ spec:
             memory: 1024Mi
         volumeMounts:
         - name: akka-tls
-          mountPath: /var/run/secrets/akka-tls
+          mountPath: /var/run/secrets/akka-tls/rotating-keys-engine
       volumes:
       - name: akka-tls
         secret:
