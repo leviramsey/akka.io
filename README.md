@@ -29,6 +29,10 @@ To build and serve the website using Docker Jekyll image run:
 
     docker run --name akka.io --volume="$PWD:/srv/jekyll" -p 3000:4000 -it jekyll/jekyll:3.4.3 jekyll serve --watch --drafts
 
+or
+
+    docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
+
 ## Adding a News Item
 
 News Items must be:
