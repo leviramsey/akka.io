@@ -112,7 +112,7 @@ Now to try things out we must start both a chat room and a gabbler and we do tha
 
 As illustrated in this example the typed `ActorRef` is a great tool for describing message protocols. Actor references with different types can be exchanged in the messages to describe the next type of messages that can be sent in an interaction.
 
-We are currently researching possibilities for deriving the message type definitions for a protocol from other sources, like a formal specification of [session types](http://groups.inf.ed.ac.uk/abcd/). First steps towards reusable and composable process steps for the implementing actors can be found at [akka-typed-session](https://github.com/rkuhn/akka-typed-session).
+We are currently researching possibilities for deriving the message type definitions for a protocol from other sources, like a formal specification of [session types](https://groups.inf.ed.ac.uk/abcd/). First steps towards reusable and composable process steps for the implementing actors can be found at [akka-typed-session](https://github.com/rkuhn/akka-typed-session).
 
 The full source code of these examples, including corresponding Java examples, are available in [patriknw/akka-typed-blog](https://github.com/patriknw/akka-typed-blog).
 

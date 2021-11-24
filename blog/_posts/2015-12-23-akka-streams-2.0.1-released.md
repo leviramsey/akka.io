@@ -10,7 +10,7 @@ tags: [releases]
 
 *Dear Hakkers,*
 
-we—the Akka committers—are very pleased to bring to you a quick follow-up maintenance release  to [Akka Streams & HTTP 2.0](https://akka.io/news/2015/12/21/akka-streams-2.0-released.html) which was released earlier this week. 
+we—the Akka committers—are very pleased to bring to you a quick follow-up maintenance release  to [Akka Streams & HTTP 2.0](https://akka.io/blog/news/2015/12/21/akka-streams-2.0-released.html) which was released earlier this week. 
 
 This release primarily aims to resolve a bug we found shortly after releasing that affected code and directives using InputStream as Source, such as the `getFromResource` directive. Having that fixed, we pack up the 2.0.1 release and deliver it to your christmas trees, in hope that you'll give Akka Streams and HTTP a spin over the holidays – we are, as always, eagerly awaiting your feedback!
 

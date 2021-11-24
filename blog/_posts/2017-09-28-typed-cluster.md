@@ -14,13 +14,13 @@ Note: Code examples in this blog post are **out of date**, see the [Akka documen
 
 Akka Typed has taken a big step forward. It's now possible to use Akka Typed with Akka Cluster, Distributed Data, Cluster Sharding, Cluster Singleton, and Persistence. We have developed new typed APIs for all these features, and a new distributed registry of actor references that is the replacement of `ActorSelection` in untyped actors.
 
-These features are still using the existing, proven, implementations from the untyped modules and they require that you run with the untyped `ActorSystem` as described in [Akka Typed: Coexistence](https://akka.io/blog/2017/05/06/typed-coexistence). The alternative would have been to re-implement everything in pure Akka Typed actors, but that would have taken much longer time to complete. That said, in the long term future we might do that.
+These features are still using the existing, proven, implementations from the untyped modules and they require that you run with the untyped `ActorSystem` as described in [Akka Typed: Coexistence](https://akka.io/blog/article/2017/05/06/typed-coexistence). The alternative would have been to re-implement everything in pure Akka Typed actors, but that would have taken much longer time to complete. That said, in the long term future we might do that.
 
-This and two more blog posts will illustrate the new typed APIs, with the assumption that you are already familiar with corresponding untyped APIs. You find more information in the [API documentation](https://doc.akka.io/api/akka/current/akka/typed/index.html). We expect a few more iterations to improve the APIs, so your feedback would be very valuable.
+This and two more blog posts will illustrate the new typed APIs, with the assumption that you are already familiar with corresponding untyped APIs. You find more information in the [API documentation](https://doc.akka.io/api/akka/current/akka/actor/typed/index.html). We expect a few more iterations to improve the APIs, so your feedback would be very valuable.
 
 ## Starting the Cluster
 
-Configuration of clustering (and remoting) is the same as in [untyped Cluster](https://doc.akka.io/docs/akka/current/scala/cluster-usage.html). Note that you must start an untyped `ActorSystem`.
+Configuration of clustering (and remoting) is the same as in [untyped Cluster](https://doc.akka.io/docs/akka/current/cluster-usage.html?language=scala). Note that you must start an untyped `ActorSystem`.
 
 ```scala
 import import akka.typed.scaladsl.adapter._
@@ -172,7 +172,7 @@ object RandomRouter {
 }
 ```
 
-Another thing that is good to know is that the same [serialization](https://doc.akka.io/docs/akka/current/scala/serialization.html) mechanism for messages as for untyped actors is also used in Akka Typed. Actor references are typically included in the messages, since there is no `sender`. To serialize actor references to/from string representation you will use the `ActorRefResolver` extension as illustrated in the [PingSerializer](https://github.com/patriknw/akka-typed-blog/blob/master/src/main/scala/blog/typed/cluster/scaladsl/PingSerializer.scala).
+Another thing that is good to know is that the same [serialization](https://doc.akka.io/docs/akka/current/serialization.html?language=scala) mechanism for messages as for untyped actors is also used in Akka Typed. Actor references are typically included in the messages, since there is no `sender`. To serialize actor references to/from string representation you will use the `ActorRefResolver` extension as illustrated in the [PingSerializer](https://github.com/patriknw/akka-typed-blog/blob/master/src/main/scala/blog/typed/cluster/scaladsl/PingSerializer.scala).
 
 The full source code of these examples, are available in [patriknw/akka-typed-blog](https://github.com/patriknw/akka-typed-blog).
 

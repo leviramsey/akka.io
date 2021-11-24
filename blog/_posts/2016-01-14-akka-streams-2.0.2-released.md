@@ -10,7 +10,7 @@ tags: [releases]
 
 *Dear Hakkers,*
 
-we—the Akka committers—are happy to announce the second maintenance release of [Akka Streams & HTTP 2.0](https://akka.io/news/2015/12/21/akka-streams-2.0-released.html). 
+we—the Akka committers—are happy to announce the second maintenance release of [Akka Streams & HTTP 2.0](https://akka.io/blog/news/2015/12/21/akka-streams-2.0-released.html). 
 This minor update addresses a number of stability issues discovered recently, mostly in the HTTP and WebSocket code.
 
 Meanwhile, we have moved all new Streams & HTTP development to the master branch, which means that these, as previously announced, 

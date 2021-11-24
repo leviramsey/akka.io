@@ -9,10 +9,10 @@ redirect_from: /news/2013/08/27/coursera-course-reactive.html
 
 We are proud to announce that Akka Tech Lead Dr. Roland Kuhn will co-present
 the Coursera course on the [Principles of Reactive
-Programming](https://www.coursera.org/course/reactive) together with Prof.
+Programming](https://www.coursera.org/specializations/scala) together with Prof.
 Martin Odersky and Prof. Erik Meijer of LINQ and Rx fame. This follow-on course
 on Martin Odersky’s [Functional Programming Principles in
-Scala](https://www.coursera.org/course/progfun) will guide you through the core
+Scala](https://www.coursera.org/learn/scala-functional-programming) will guide you through the core
 concepts outlined in the [Reactive
 Manifesto](https://www.reactivemanifesto.org/), illustrating the techniques
 using Scala’s

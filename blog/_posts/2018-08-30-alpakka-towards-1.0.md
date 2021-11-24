@@ -9,7 +9,7 @@ tags: [alpakka,streams]
 
 Dear hakkers,
 
-Akka's satellite project to collect Reactive Enterprise Integrations in a library - [Alpakka](https://doc.akka.io/docs/alpakka/current/) - just turned [2 years](https://akka.io/blog/2016/08/23/intro-alpakka.html) the other day. 
+Akka's satellite project to collect Reactive Enterprise Integrations in a library - [Alpakka](https://doc.akka.io/docs/alpakka/current/) - just turned [2 years](https://akka.io/blog/article/2016/08/23/intro-alpakka.html) the other day. 
 
 In these 2 years Alpakka has grown from a handful of included technologies to a large set of Reactive Integrations built on Akka Streams, delivered in more than 30 modules.
 

@@ -10,8 +10,8 @@ tags: [releases]
 
 *Dear Hakkers,*
 
-we—the Akka committers—are happy to announce the third maintenance release of [Akka Streams & HTTP 2.0](https://akka.io/news/2015/12/21/akka-streams-2.0-released.html).
-This minor update addresses a couple of stability issues discovered recently for those who can not upgrade to [Akka 2.4.2-RC1](https://akka.io/news/2016/01/26/akka-2.4.2-RC1-released.html).
+we—the Akka committers—are happy to announce the third maintenance release of [Akka Streams & HTTP 2.0](https://akka.io/blog/news/2015/12/21/akka-streams-2.0-released.html).
+This minor update addresses a couple of stability issues discovered recently for those who can not upgrade to [Akka 2.4.2-RC1](https://akka.io/blog/news/2016/01/26/akka-2.4.2-RC1-released.html).
 
 Fixes in this release include:
 

@@ -12,11 +12,11 @@ tags: [actor,typed,typed-cluster]
 
 Note: Code examples in this blog post are **out of date**, see the [Akka documentation](https://doc.akka.io/docs/akka/current/typed/cluster.html#higher-level-cluster-tools) for latest information on this topic.
 
-In [previous post](https://akka.io/blog/2017/09/28/typed-cluster) we looked at the the Cluster and Receptionist for Akka Typed. In this post you will be introduced to the new typed APIs for Distributed Data, Cluster Singleton and Cluster Sharding. These features are still using the existing implementations from the untyped modules and they require that you run with the untyped ActorSystem as described in [Akka Typed: Coexistence](https://akka.io/blog/2017/05/06/typed-coexistence).
+In [previous post](https://akka.io/blog/article/2017/09/28/typed-cluster) we looked at the the Cluster and Receptionist for Akka Typed. In this post you will be introduced to the new typed APIs for Distributed Data, Cluster Singleton and Cluster Sharding. These features are still using the existing implementations from the untyped modules and they require that you run with the untyped ActorSystem as described in [Akka Typed: Coexistence](https://akka.io/blog/article/2017/05/06/typed-coexistence).
 
 ## Distributed Data
 
-The API for [Distributed Data](https://doc.akka.io/docs/akka/current/scala/distributed-data.html) is very similar to the untyped API, with the difference that you have to pass the `replyTo` actor reference in the messages as there is no `sender`. Here is an example:
+The API for [Distributed Data](https://doc.akka.io/docs/akka/current/distributed-data.html?language=scala) is very similar to the untyped API, with the difference that you have to pass the `replyTo` actor reference in the messages as there is no `sender`. Here is an example:
 
 ```scala
 import akka.cluster.ddata.GCounter
@@ -88,7 +88,7 @@ Note that the messages such as `Replicator.Update` are defined in `akka.typed.cl
 
 ## Cluster Singleton
 
-The API for [Cluster Singleton](https://doc.akka.io/docs/akka/current/scala/cluster-singleton.html) is simplified compared to the untyped API. It is based on an extension that provides a single `spawn` method that starts both the `SingletonManager` and the `SingletonProxy`. It returns an `ActorRef` to the `SingletonProxy`, which is used for sending messages to the singleton instance that is running somewhere (oldest node) in the cluster. You should call this `ClusterSingleton.spawn` method on all nodes at system startup.
+The API for [Cluster Singleton](https://doc.akka.io/docs/akka/current/cluster-singleton.html?language=scala) is simplified compared to the untyped API. It is based on an extension that provides a single `spawn` method that starts both the `SingletonManager` and the `SingletonProxy`. It returns an `ActorRef` to the `SingletonProxy`, which is used for sending messages to the singleton instance that is running somewhere (oldest node) in the cluster. You should call this `ClusterSingleton.spawn` method on all nodes at system startup.
 
 If the node doesn't have the given role then only the proxy is started, and not the manager.
 
@@ -130,7 +130,7 @@ val singletonProxy: ActorRef[SequenceNumberGenerator.Message] =
 
 ## Cluster Sharding
 
-The API for [Cluster Sharding](https://doc.akka.io/docs/akka/current/scala/cluster-sharding.html) has also been simplified. You start the sharded type with the `ClusterSharding` extension:
+The API for [Cluster Sharding](https://doc.akka.io/docs/akka/current/cluster-sharding.html?language=scala) has also been simplified. You start the sharded type with the `ClusterSharding` extension:
 
 ```scala
 import akka.typed.cluster.sharding.ClusterSharding

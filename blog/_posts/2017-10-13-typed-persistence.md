@@ -12,10 +12,10 @@ tags: [actor,typed,typed-cluster]
 
 Note: Code examples in this blog post are **out of date**, see the [Akka documentation](https://doc.akka.io/docs/akka/current/typed/index-persistence.html) for latest information on this topic.
 
-How to use Cluster Sharding with Akka Typed was shown in [previous post](https://akka.io/blog/2017/10/04/typed-cluster-tools).
+How to use Cluster Sharding with Akka Typed was shown in [previous post](https://akka.io/blog/article/2017/10/04/typed-cluster-tools).
 Sharding is typically used with persistent actors so in this post we will introduce the new APIs for typed persistent actors.
 
-These features are still using the existing implementations from the untyped modules and they require that you run with the untyped ActorSystem as described in [Akka Typed: Coexistence](https://akka.io/blog/2017/05/06/typed-coexistence).
+These features are still using the existing implementations from the untyped modules and they require that you run with the untyped ActorSystem as described in [Akka Typed: Coexistence](https://akka.io/blog/article/2017/05/06/typed-coexistence).
 
 Akka Persistence enables stateful actors to persist their internal state so that it can be recovered when an actor is started, restarted after a JVM crash or by a supervisor, or migrated in a cluster. The key concept behind Akka persistence is that only changes to an actor’s internal state are persisted but never its current state directly (except for optional snapshots). Such stateful actors are recovered by replaying stored changes to these actors from which they can rebuild internal state.
 
@@ -244,7 +244,7 @@ The event handler is always the same independent of state. The main reason for n
 
 ## Serialization
 
-The same [serialization](https://doc.akka.io/docs/akka/current/scala/serialization.html) mechanism as for untyped actors is also used in Akka Typed, also for persistent actors. When picking serialization solution for the events you should also consider that it must be possible read old events when the application has evolved. Strategies for that can be found in the [Akka documentation](https://doc.akka.io/docs/akka/current/scala/persistence-schema-evolution.html).
+The same [serialization](https://doc.akka.io/docs/akka/current/serialization.html?language=scala) mechanism as for untyped actors is also used in Akka Typed, also for persistent actors. When picking serialization solution for the events you should also consider that it must be possible read old events when the application has evolved. Strategies for that can be found in the [Akka documentation](https://doc.akka.io/docs/akka/current/persistence-schema-evolution.html?language=scala).
 
 The example code that comes with this blog post includes Protobuf serialization for the commands, events and state of the `BlogPost` example, see [BlogSerializer](https://github.com/patriknw/akka-typed-blog/blob/master/src/main/scala/blog/typed/persistence/scaladsl/BlogSerializer.scala).
 
@@ -254,7 +254,7 @@ The example code that comes with this blog post includes Protobuf serialization 
 
 You also have to configure an Akka Persistence journal. The full [example code](https://github.com/patriknw/akka-typed-blog) includes such configuration for [akka-persistence-cassandra](https://github.com/akka/akka-persistence-cassandra).
 
-[Previous post](https://akka.io/blog/2017/10/04/typed-cluster-tools) describes how to use Cluster Sharding. There is one thing to be aware of. When used with Cluster Sharding the `persistenceId` is not known until the actor is started and typically based on the `entityId`, which is the actor name. Therefore, with sharding `PersistentActor.persistentEntity` must be used instead of `PersistentActor.immutable. It takes a function to create the `persistenceId`.
+[Previous post](https://akka.io/blog/article/2017/10/04/typed-cluster-tools) describes how to use Cluster Sharding. There is one thing to be aware of. When used with Cluster Sharding the `persistenceId` is not known until the actor is started and typically based on the `entityId`, which is the actor name. Therefore, with sharding `PersistentActor.persistentEntity` must be used instead of `PersistentActor.immutable. It takes a function to create the `persistenceId`.
 
 ```scala
 import akka.typed.cluster.sharding.EntityTypeKey

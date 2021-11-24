@@ -9,7 +9,7 @@ tags: [alpakka,streams]
 
 Dear hakkers,
 
-One and a half years ago the Akka Team [announced](https://akka.io/blog/2016/08/23/intro-alpakka) a place for the community to collect endpoints for systems integration with Akka Streams: [Alpakka](https://doc.akka.io/docs/alpakka/current/).
+One and a half years ago the Akka Team [announced](https://akka.io/blog/article/2016/08/23/intro-alpakka) a place for the community to collect endpoints for systems integration with Akka Streams: [Alpakka](https://doc.akka.io/docs/alpakka/current/).
 The community showed its strength and we've received a lot of great contributions to this effort to enable enterprise integration in a reactive way.
 
 During this time the Akka Team has enjoyed this great interest to contribute to Alpakka, but did not get to review Pull Requests as often as they would have liked. Core Akka and exploration of useful additions to it has been their main focus.

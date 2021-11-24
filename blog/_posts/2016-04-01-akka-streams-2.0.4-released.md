@@ -10,7 +10,7 @@ tags: [releases]
 
 *Dear Hakkers,*
 
-we—the Akka committers—are happy to announce the fourth maintenance release of [Akka Streams & HTTP 2.0](https://akka.io/news/2015/12/21/akka-streams-2.0-released.html).
+we—the Akka committers—are happy to announce the fourth maintenance release of [Akka Streams & HTTP 2.0](https://akka.io/blog/news/2015/12/21/akka-streams-2.0-released.html).
 This update addresses stability issues for those who can not upgrade to Akka 2.4.x.
 
 Fixes in this release include:

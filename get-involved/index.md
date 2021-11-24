@@ -21,7 +21,7 @@ title: Get Involved
 		    <path d="M18.2,36.2V18.8H7.6A5.59,5.59,0,0,0,2,24.4V41.2a5.59,5.59,0,0,0,5.6,5.6h2.8v8.4l8.4-8.4h14a5.59,5.59,0,0,0,5.6-5.6V36.1c-.2,0-.4.1-.6.1ZM52.4,4.8H27.2a5.59,5.59,0,0,0-5.6,5.6V32.8H41.2l8.4,8.4V32.8h2.8A5.59,5.59,0,0,0,58,27.2V10.4A5.59,5.59,0,0,0,52.4,4.8Z" transform="translate(-2 -4.8)" fill="#15a9ce"/>
 		</svg>
 		<h1>Join the Discuss Akka forums</h1>
-		<a href="https://discuss.akka.io">Discuss with other Akka users</a>
+		<a href="https://discuss.akka.io/">Discuss with other Akka users</a>
 		<p>The Discuss Akka forums is where the Akka and Lightbend communities meet. Asking and answering questions on the forums is a great way to share knowledge about Akka. It also allows for a more open discussion than pure Q/A focused platforms.</p>
 	</div>
     <div class="box">

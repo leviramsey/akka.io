@@ -85,7 +85,7 @@ Internally, the signalling of stream cancellation has been improved so that it d
 This is just a short summary of many new features added to Akka since version 2.6.0. All other parts of Akka, such as Akka Streams and included test kits for all parts are still there as well.
 Now that Akka 2.6 has been with us for more than a year, other projects in the Akka family will change to require Akka 2.6 in their next minor releases.
 
-[Lightbend](https://www.lightbend.com/) employs the Akka core team. If you’re looking [to take your Akka systems to the next level](https://www.lightbend.com/lightbend-subscription), let’s [set up a time](https://lightbend.com/contact) to discuss our enterprise-grade expert support, self-paced education courses, and technology enhancements that help you manage, monitor and secure your Akka systems － from development to production.
+[Lightbend](https://www.lightbend.com/) employs the Akka core team. If you’re looking [to take your Akka systems to the next level](https://www.lightbend.com/akka-platform#subscription), let’s [set up a time](https://www.lightbend.com/contact) to discuss our enterprise-grade expert support, self-paced education courses, and technology enhancements that help you manage, monitor and secure your Akka systems － from development to production.
 
 Happy hakking!
 

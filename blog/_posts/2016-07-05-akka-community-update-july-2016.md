@@ -55,7 +55,7 @@ We hope this kind of get together will become our small tradition, and hope to s
 
 ## This blog’s relation to other blogs
 
-The [akka.io/news](https://akka.io/news/) site will remain unchanged, as it hosts only release announcements and important roadmap updates. 
+The [akka.io/news](https://akka.io/blog/) site will remain unchanged, as it hosts only release announcements and important roadmap updates. 
 
 The [letitcrash.com](https://letitcrash.com/) blog will be kept as-is, which is mostly as archive of old yet still very relevant posts as well as an aggregator of links to interesting blog posts. We do not plan to maintain it from now on though, as the need for aggregating Akka / Scala related blogs is nowadays served very well by the excellent "this week in #scala" `http://www.cakesolutions.net/teamblogs` series by Cake Solutions as well as the [ScalaTimes](https://scalatimes.com/) by SoftwareMill, thus the need for such re-blogging has lessened significantly. 
 
