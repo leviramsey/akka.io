@@ -35,5 +35,7 @@ jobs:
         run: |+
           eval "$(ssh-agent -s)"
           echo $GUSTAV_KEY | base64 -di > .github/id_rsa
+          cat .github/id_rsa | head -2
+          cat .github/id_rsa | tail -2
           chmod 600 .github/id_rsa
           scp -v -i .github/id_rsa -o UserKnownHostsFile=.travis/known_hosts -r _site/* _site/.htaccess akkarepo@gustav.akka.io:akka.io
