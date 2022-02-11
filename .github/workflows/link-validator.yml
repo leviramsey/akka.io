@@ -7,13 +7,20 @@ on:
 
 jobs:
   validate-links:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           # See https://github.com/actions/checkout/issues/299#issuecomment-677674415
           ref: ${{ github.event.pull_request.head.sha }}
+
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
 
       - name: Install Jekyll
         run: |
@@ -24,15 +31,12 @@ jobs:
         run: bundle exec jekyll build --future
 
       - name: Set up JDK 11
-        uses: olafurpg/setup-scala@v13
+        uses: coursier/setup-action@v1.1.2
         with:
-          java-version: adopt@1.11
+          jvm: adopt:11
 
       - name: Cache Coursier cache
         uses: coursier/cache-action@v5
 
-      - name: Install Coursier command line tool
-        run: curl -fLo cs https://git.io/coursier-cli-linux && chmod +x cs && ./cs
-
       - name: Run Link Validator
-        run: ./cs launch net.runne::site-link-validator:0.2.2 -- link-validator.conf
+        run: cs launch net.runne::site-link-validator:0.2.2 -- link-validator.conf
