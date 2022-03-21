@@ -15,6 +15,10 @@
   twitter: rolandkuhn
   desc: After earning a PhD in high-energy particle physics and while working as a systems engineer in the space business, Roland came in contact with the Akka project. He started contributing in 2010 and was employed by Lightbend 2011-2016 where he was leading the Akka project from November 2012. <a href="https://www.rolandkuhn.com">rolandkuhn.com</a>
 
+- name: Raymond Roestenburg
+  avatar: https://avatars.githubusercontent.com/u/156425?v=4&s=160
+  desc: Ray has been working as a professional software engineer since 1997. He has been a production user, contributor and evangelist of Akka since 2010. He is the author of Akka in Action.
+
 - name: Ignasi Marimon-Clos
   avatar: https://s.gravatar.com/avatar/73fd4336663abc30844ea3a895b4a6fb?s=160
   twitter: ignasi35
