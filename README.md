@@ -29,7 +29,7 @@ To build and serve the website using Docker Jekyll image run:
 
     docker run --name akka.io --volume="$PWD:/srv/jekyll" -p 3000:4000 -it jekyll/jekyll:3.4.3 jekyll serve --watch --drafts
 
-or
+or (you might need to delete `Gemfile.lock` first)
 
     docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
 
