@@ -21,4 +21,9 @@
 - name: Francisco Lopez-Sancho Abraham
   avatar: https://s.gravatar.com/avatar/1052d896e31d8ac9dd20429baed2ad8d?s=80
   twitter: lopezsanchofran
-  desc: Francisco is the author of the Manning book Akka Typed second edition.  He studied philosophy in Madrid and started as a Microsoft trainer in 2000 before becoming a professional programmer in 2007. He started working as a consultant in 2016 before joining the Akka team. He is a digital nomad at heart. 
+  desc: Francisco is the author of the Manning book Akka Typed second edition.  He studied philosophy in Madrid and started as a Microsoft trainer in 2000 before becoming a professional programmer in 2007. He started working as a consultant in 2016 before joining the Akka team. He is a digital nomad at heart.
+  
+- name: Eduardo Pinto
+  avatar: https://avatars.githubusercontent.com/u/1105359?v=4&s=160
+  twitter: efgpinto
+  desc: Eduardo completed his M.Sc. in Computer Science in 2012 and spent the following 4 years doing research and teaching at the same university in Porto. After he decided to move to the industry, he discovered a special interest on scalable and high-availability services and distributed systems, before joining Lightbend and the Akka team.
