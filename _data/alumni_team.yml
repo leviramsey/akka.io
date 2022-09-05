@@ -15,6 +15,16 @@
   twitter: rolandkuhn
   desc: After earning a PhD in high-energy particle physics and while working as a systems engineer in the space business, Roland came in contact with the Akka project. He started contributing in 2010 and was employed by Lightbend 2011-2016 where he was leading the Akka project from November 2012. <a href="https://www.rolandkuhn.com">rolandkuhn.com</a>
 
+- name: Johannes Rudolph
+  avatar: https://avatars1.githubusercontent.com/u/9868?v=3&s=160
+  twitter: virtualvoid
+  desc: Johannes was part of the original Spray team and was involved in both Akka IO and more recently Akka HTTP, he is also the author of a number of useful sbt plugins.
+
+- name: Arnout Engelen
+  avatar: https://s.gravatar.com/avatar/77058c1d1c35291341b8c7a6d62e0666?s=160
+  twitter: raboofje
+  desc: After working on static source code analysis and receiving his M.Sc. in CS in 2006, Arnout went on to industry. Here he worked in a wide range of fields, from high-traffic enterprise e-commerce to financial data processing, predominantly based on the JVM. With that he became excited about how Akka can elegantly model today's concurrent and distributed systems.
+
 - name: Raymond Roestenburg
   avatar: https://avatars.githubusercontent.com/u/156425?v=4&s=160
   desc: Ray has been working as a professional software engineer since 1997. He has been a production user, contributor and evangelist of Akka since 2010. He is the author of Akka in Action.
