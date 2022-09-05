@@ -18,3 +18,7 @@
   avatar: http://www.gravatar.com/avatar/d1d4a046f41854a01e461b1732bb764b?s=160
   desc: Peter worked on Akka in the early days, and then Akka-related projects like Lightbend Telemetry. He's currently the farthest flung member of the Akka team, living on the South Island of New Zealand.
 
+- name: Francisco Lopez-Sancho Abraham
+  avatar: https://s.gravatar.com/avatar/1052d896e31d8ac9dd20429baed2ad8d?s=80
+  twitter: lopezsanchofran
+  desc: Francisco is the author of the Manning book Akka Typed second edition.  He studied philosophy in Madrid and started as a Microsoft trainer in 2000 before becoming a professional programmer in 2007. He started working as a consultant in 2016 before joining the Akka team. He is a digital nomad at heart. 
