@@ -118,11 +118,13 @@ document.addEventListener("DOMContentLoaded", function() {
         var rotatorItemsLength = rotatorItems.length -1;
         //turn on first item
         rotatorItems[index].classList.add('visible');
-        //rotate through items
-        setInterval(function(){ 
-            rotatorItems[index].classList.remove('visible');
-            if(index != rotatorItemsLength){index += 1;}else{index = 0;};
-            rotatorItems[index].classList.add('visible');
-        }, 9000);
+        //rotate through items if more than one promo
+        if(rotatorItems.length > 1){
+            setInterval(function(){ 
+                rotatorItems[index].classList.remove('visible');
+                if(index != rotatorItemsLength){index += 1;}else{index = 0;};
+                rotatorItems[index].classList.add('visible');
+            }, 9000);
+        }
     };
 });

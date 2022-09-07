@@ -163,11 +163,33 @@
 		}
 	}
 }
-
+.licensing-change {
+	margin: 60px 0 0 0;
+    text-align: center;
+	h1, h2.h1 {
+        margin-bottom: 1em;
+    }
+	blockquote {
+		margin: 3rem 0 1rem 0;
+		p {
+			@include x-rem(font-size, 2.5);
+			font-style: italic;
+			margin: 0 5rem .75rem 5rem;
+		}
+		@include single-column {
+			p {
+				margin: 0 0 .75rem 0;
+			}
+		}
+		footer {
+			opacity: .75;
+		}
+	}
+}
 .sponsors {
     margin: 60px 0 0 0;
     text-align: center;
-    h1 {
+    h1, h2.h1 {
         margin-bottom: 1em;
     }
     a.lightbend-sponsor-logo {
