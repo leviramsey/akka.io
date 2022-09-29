@@ -36,7 +36,7 @@ commits   added  removed
       1      30       12 Renato Cavalcanti
 ```
 
-The Akka core team is employed by [Lightbend](https://www.lightbend.com/). If you're looking [to take your Akka systems to the next level](https://www.lightbend.com/akka-platform#subscription), let's [set up a time](https://www.lightbend.com/contact) to discuss our enterprise-grade expert support, self-paced education courses, and technology enhancements that help you manage, monitor and secure your Akka systems - from development to production.
+The Akka core team is employed by [Lightbend](https://www.lightbend.com/). If you're looking [to take your Akka systems to the next level](https://www.lightbend.com/akka#subscription), let's [set up a time](https://www.lightbend.com/contact) to discuss our enterprise-grade expert support, self-paced education courses, and technology enhancements that help you manage, monitor and secure your Akka systems - from development to production.
 
 Happy hakking!
 
