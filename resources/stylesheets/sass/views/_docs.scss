@@ -140,7 +140,8 @@
   }
   .docModuleGrid {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 30px;
     margin-bottom: 30px;
     @include single-column {
       display: block;
