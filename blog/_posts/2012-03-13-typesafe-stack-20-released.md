@@ -15,7 +15,7 @@ This is interesting to Akka hakkers in several ways:
 
 ## Typesafe Console
 
-The Typesafe Console is now available as part of the commercial [Typesafe Subscription](https://www.lightbend.com/akka-platform#subscription).
+The Typesafe Console is now available as part of the commercial [Typesafe Subscription](https://www.lightbend.com/akka#subscription).
 
 The Typesafe Console is a tailor-made tracing and monitoring solution for event-driven Akka actor based systems. The Typesafe Console captures the events that comprise your application’s asynchronous processing, links those events into meaningful trace flows across actors and remote nodes, and makes this information actionable to developers and operations staff through a rich web-based user interface as well as through REST an JMX interfaces.
 
@@ -40,6 +40,6 @@ You can also work through one of the getting started tutorials. More info can be
 
 ## Download
 
-Download it from the [Typesafe download page](https://www.lightbend.com/akka-platform).
+Download it from the [Typesafe download page](https://www.lightbend.com/akka).
 
 **Happy hAkking!**

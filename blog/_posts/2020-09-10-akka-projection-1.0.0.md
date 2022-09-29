@@ -38,7 +38,7 @@ The full documentation can be found at [https://doc.akka.io/docs/akka-projection
 
 Starting at Akka Projections 1.0.0, this module is now officially
 [Supported](https://developer.lightbend.com/docs/introduction/getting-help/support-terminology.html)
-as part of a [Lightbend Subscription](https://www.lightbend.com/akka-platform#subscription).
+as part of a [Lightbend Subscription](https://www.lightbend.com/akka#subscription).
 
 ### API stability
 
@@ -69,7 +69,7 @@ commits   added  removed
       1       1        1  Johan Andrén
 ```
 
-The Akka core team is employed by [Lightbend](https://www.lightbend.com/). If you're looking [to take your Akka systems to the next level](https://www.lightbend.com/akka-platform#subscription), let's [set up a time](https://www.lightbend.com/contact) to discuss our enterprise-grade expert support, self-paced education courses, and technology enhancements that help you manage, monitor and secure your Akka systems - from development to production.
+The Akka core team is employed by [Lightbend](https://www.lightbend.com/). If you're looking [to take your Akka systems to the next level](https://www.lightbend.com/akka#subscription), let's [set up a time](https://www.lightbend.com/contact) to discuss our enterprise-grade expert support, self-paced education courses, and technology enhancements that help you manage, monitor and secure your Akka systems - from development to production.
 
 Happy hakking!
 
