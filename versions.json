@@ -7,53 +7,59 @@ layout: null
     "1.1": {
       "latest": "1.1.3",
       "outdated": true,
-      "instead": "2.6"
+      "instead": "2.7"
     },
     "1.2": {
       "latest": "1.2",
       "outdated": true,
-      "instead": "2.6"
+      "instead": "2.7"
     },
     "1.3": {
       "latest": "1.3.1",
       "outdated": true,
-      "instead": "2.6"
+      "instead": "2.7"
     },
     "2.0": {
       "latest": "2.0.5",
       "outdated": true,
-      "instead": "2.6"
+      "instead": "2.7"
     },
     "2.1": {
       "latest": "2.1.4",
       "outdated": true,
-      "instead": "2.6"
+      "instead": "2.7"
     },
     "2.2": {
       "latest": "2.2.5",
       "outdated": true,
-      "instead": "2.6"
+      "instead": "2.7"
     },
     "2.3": {
       "latest": "2.3.16",
       "outdated": true,
-      "instead": "2.6"
+      "instead": "2.7"
     },
     "2.4": {
-      "latest": "2.4",
+      "latest": "2.4.20",
       "outdated": true,
-      "instead": "2.6"
+      "instead": "2.7"
     },
     "2.5-": {
-      "latest": "{{ page.previous_akka_version }}",
+      "latest": "2.5.32",
       "outdated": true,
-      "instead": "2.6"
+      "instead": "2.7"
     },
     "2.5": {
-      "latest": "{{ page.previous_akka_version }}",
-      "instead": "2.6"
+      "latest": "2.5.32",
+      "outdated": true,
+      "instead": "2.7"
     },
     "2.6": {
+      "latest": "{{ page.previous_akka_version }}",
+      "outdated": true,
+      "instead": "2.7"
+    },
+    "2.7": {
       "latest": "{{ page.current_akka_version }}"
     }
   },
@@ -62,9 +68,19 @@ layout: null
     "10.0": {
       "latest": "10.0.13",
       "outdated": true,
-      "instead": "10.1"
+      "instead": "10.4"
     },
     "10.1": {
+      "latest": "10.1.15",
+      "outdated": true,
+      "instead": "10.4"
+    },
+    "10.2": {
+      "latest": "10.2.10",
+      "outdated": true,
+      "instead": "10.4"
+    },
+    "10.4": {
       "latest": "{{ page.current_akka_http_version }}"
     }
   }

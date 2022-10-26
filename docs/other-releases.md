@@ -18,7 +18,19 @@ Documentation:
 
 ### Akka {{ page.previous_akka_version }}
 
-Akka 2.5 was the previous stable version. Only patched if critical bugs are found.
+Akka 2.6 was the previous stable version. Only patched if critical bugs are found.
+
+Documentation:
+[Java Manual](https://doc.akka.io/docs/akka/2.6/index.html?language=java)
+[Java API](https://doc.akka.io/japi/akka/2.6)
+[Scala Manual](https://doc.akka.io/docs/akka/2.6/index.html?language=scala)
+[Scala API](https://doc.akka.io/api/akka/2.6)
+
+Artifacts are available from Maven Central.
+
+### Akka 2.5
+
+Akka 2.5 reached end-of-life 11/6/2020, with the last version being 2.5.32
 
 Documentation:
 [Java Manual](https://doc.akka.io/docs/akka/2.5/index.html?language=java)
