@@ -12,8 +12,9 @@ $(function () {
         })
 
         docsearch({
-            apiKey: '543bad5ad786495d9ccd445ed34ed082',
-            indexName: 'akka_io',
+            appId: 'XUXZ6LW9B1',
+            apiKey: '5b6260148e92f7c5e38338fcf7eaa3e0',
+            indexName: 'akka_docs',
             inputSelector: '#search-scala',
             algoliaOptions: {
                 hitsPerPage: 5,
@@ -22,8 +23,9 @@ $(function () {
         })
 
         docsearch({
-            apiKey: '543bad5ad786495d9ccd445ed34ed082',
-            indexName: 'akka_io',
+            appId: 'XUXZ6LW9B1',
+            apiKey: '5b6260148e92f7c5e38338fcf7eaa3e0',
+            indexName: 'akka_docs',
             inputSelector: '#search-java',
             algoliaOptions: {
                 hitsPerPage: 5,
