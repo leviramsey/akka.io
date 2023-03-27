@@ -67,7 +67,7 @@ One potential issue is that in our tests the benchmarking tool, ghz, can saturat
 If you want to test this on your own machine, grpc_bench uses a Docker-based workflow that is orchestrated using a few scripts. It is quite simple to build and execute the benchmarks you care about on your own – see its [README](https://github.com/LesnyRumcajs/grpc_bench/blob/master/README.md) for more information.
 
 ## Q: What specifically did the Akka team do to enable this massive increase in performance, and how was it driven by Akka Serverless?
-We noticed that our [gRPC usage in Akka Serverless](https://docs.kalix.io/java/writing-grpc-descriptors-protobuf.html) (and also in general) are more often of the simpler request/response kind than actually using the streaming capabilities of gRPC. However, the HTTP/2 implementation of Akka HTTP was built around the streaming capabilities. A stream has a significant cost when it is initially set up which limits the achievable throughput for one-off requests.
+We noticed that our [gRPC usage in Akka Serverless](https://docs.kalix.io/java-protobuf/writing-grpc-descriptors-protobuf.html) (and also in general) are more often of the simpler request/response kind than actually using the streaming capabilities of gRPC. However, the HTTP/2 implementation of Akka HTTP was built around the streaming capabilities. A stream has a significant cost when it is initially set up which limits the achievable throughput for one-off requests.
 
 So we build a fast path for simple requests which required changes throughout the stack:
 
