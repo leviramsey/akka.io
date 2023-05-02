@@ -21,6 +21,8 @@ subject to poisoning.
 
 [AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L/E:P/RL:O/RC:R](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L/E:P/RL:O/RC:R&version=3.1)
 
+Overall CVSS Score: 4.9
+
 ## Impact
 
 If the application performing discovery does not validate (e.g. via TLS) the authenticity of the
